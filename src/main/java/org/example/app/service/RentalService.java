@@ -1,7 +1,7 @@
-package org.example.service;
+package org.example.app.service;
 
-import org.example.entities.CarRental;
-import org.example.entities.Invoice;
+import org.example.app.entities.CarRental;
+import org.example.app.entities.Invoice;
 
 import java.time.Duration;
 

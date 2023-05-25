@@ -1,4 +1,4 @@
-package org.example.workingwithfile
+package org.example.app.workingwithfile
 
 import org.apache.commons.logging.LogFactory
 import java.io.BufferedWriter

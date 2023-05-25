@@ -1,4 +1,4 @@
-package org.example.workingwithfile.exercicioArquivos;
+package org.example.app.workingwithfile.exercicioArquivos;
 
 public class Product {
 

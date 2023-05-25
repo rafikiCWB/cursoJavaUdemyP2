@@ -1,4 +1,4 @@
-package org.example.workingwithfile.exercicioArquivos;
+package org.example.app.workingwithfile.exercicioArquivos;
 
 import java.io.*;
 import java.text.ParseException;

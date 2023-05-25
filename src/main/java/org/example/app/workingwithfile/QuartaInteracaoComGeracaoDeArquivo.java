@@ -1,7 +1,6 @@
-package org.example.workingwithfile;
+package org.example.app.workingwithfile;
 
 import java.io.File;
-import java.nio.file.Path;
 import java.util.Scanner;
 
 public class QuartaInteracaoComGeracaoDeArquivo {
@@ -20,7 +19,7 @@ public class QuartaInteracaoComGeracaoDeArquivo {
 
         var files = path.listFiles(File::isFile);
         System.out.println("Arquivos");
-        for (File arquivo : files){
+        for (File arquivo : files) {
             System.out.println(arquivo);
         }
         boolean success = new File(caminho + "\\subpasta").mkdir();

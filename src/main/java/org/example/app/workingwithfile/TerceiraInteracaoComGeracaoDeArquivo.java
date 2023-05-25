@@ -1,4 +1,4 @@
-package org.example.workingwithfile;
+package org.example.app.workingwithfile;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

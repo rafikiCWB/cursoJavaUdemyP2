@@ -1,9 +1,9 @@
-package org.example;
+package org.example.app;
 
-import org.example.entities.CarRental;
-import org.example.entities.Vehicle;
-import org.example.service.BrazilTaxService;
-import org.example.service.RentalService;
+import org.example.app.entities.CarRental;
+import org.example.app.entities.Vehicle;
+import org.example.app.service.BrazilTaxService;
+import org.example.app.service.RentalService;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
