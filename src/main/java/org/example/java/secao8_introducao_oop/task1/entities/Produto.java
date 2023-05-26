@@ -1,4 +1,4 @@
-package org.example.java.secao8_introducao_oop.entities;
+package org.example.java.secao8_introducao_oop.task1.entities;
 
 public class Produto {
     private String nome;
