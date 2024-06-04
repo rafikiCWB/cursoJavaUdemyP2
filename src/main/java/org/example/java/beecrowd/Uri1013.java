@@ -14,7 +14,6 @@ public class Uri1013 {
         var maiorABC = (maiorAB + c + Math.abs(maiorAB - c)) /2;
         System.out.println(maiorABC);
 
-
         sc.close();
     }
 }
