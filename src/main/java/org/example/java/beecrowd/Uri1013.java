@@ -12,7 +12,7 @@ public class Uri1013 {
 
         var maiorAB  = (a + b + Math.abs(a - b)) / 2;
         var maiorABC = (maiorAB + c + Math.abs(maiorAB - c)) /2;
-        System.out.println(maiorABC);
+        System.out.println(maiorABC + " É o maior");
 
         sc.close();
     }
