@@ -1,4 +1,4 @@
-package org.example.app.workingwithfile;
+package org.example.app.workingwithfile.testes;
 
 import java.io.File;
 import java.util.Scanner;
@@ -8,7 +8,7 @@ public class QuartaInteracaoComGeracaoDeArquivo {
         var teclado = new Scanner(System.in);
 
         System.out.print("Entre com o caminho do arquivo: ");
-        String caminho = teclado.nextLine();
+        String caminho = "C:\\temp"; // or teclado.nextLine();
 
         File path = new File(caminho);
         File[] folders = path.listFiles(File::isDirectory);

@@ -25,6 +25,7 @@ public class App {
         out.println("Quantidade em Stock ");
         produto.setQtd(teclado.nextInt());
 
+
         out.println("Product data: " + produto);
         try {
             while (true) {

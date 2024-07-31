@@ -11,8 +11,8 @@ public class AnosEmDias {
         ano = anoEmDias / 365; //1
         resto = anoEmDias % 365; // 35
 
-        mes = resto / 30;
-        dia = resto % 30;
+        mes = resto / 30; // 1
+        dia = resto % 30; // 5
         System.out.println("anos" + ano);
         System.out.println("mes" + mes);
         System.out.println("dia" + dia);

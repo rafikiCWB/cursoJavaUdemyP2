@@ -1,7 +1,6 @@
 package org.example.estruturadedados;
 
 import java.util.*;
-import java.util.stream.Stream;
 
 import static java.lang.System.out;
 
@@ -35,7 +34,7 @@ public class StackPilha {
          *  HashSet imprime os elementos no formato
          *  LIFO == last in first out, ou seja,
          *  último a entrar primeiro a sair, ou seja,
-         *  último a ser adicionado primeiro a ser imprimido
+         *  último a ser adicionado primeiro a ser impresso
          *  e não permite elementos repetidos.
          */
         //Example code to Set
@@ -50,10 +49,9 @@ public class StackPilha {
         out.println("- - - - --------------- - - - -");
 
         /**
-         * Map é um conjunto chave valor que não permite elementos
+         * Map é um conjunto chave, valor que não permite elementos
          * repetidos e a impressão de elementos é no formato
          * LIFO
-         *
          */
         Map<String, Long> listMap = new HashMap<>();
         listMap.put("Rafael", 27l);

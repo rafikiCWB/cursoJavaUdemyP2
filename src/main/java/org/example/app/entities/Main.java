@@ -1,7 +1,5 @@
-package org.example.app;
+package org.example.app.entities;
 
-import org.example.app.entities.CarRental;
-import org.example.app.entities.Vehicle;
 import org.example.app.service.BrazilTaxService;
 import org.example.app.service.RentalService;
 

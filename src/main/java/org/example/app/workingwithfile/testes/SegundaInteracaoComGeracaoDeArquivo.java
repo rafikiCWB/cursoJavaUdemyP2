@@ -1,4 +1,4 @@
-package org.example.app.workingwithfile;
+package org.example.app.workingwithfile.testes;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -25,9 +25,9 @@ public class SegundaInteracaoComGeracaoDeArquivo {
             System.out.println("Error: " + e.getMessage());
         } finally {
             try {
-                if (br != null) ;
+                if (br != null);
                 br.close();
-                if (fr != null) ;
+                if (fr != null);
                 fr.close();
             } catch (IOException e) {
                 e.printStackTrace();

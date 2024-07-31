@@ -1,4 +1,4 @@
-package org.example.app.workingwithfile;
+package org.example.app.workingwithfile.testes;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ public class TerceiraInteracaoComGeracaoDeArquivo {
 
     public static void main(String[] args) {
 
-        var path = "C:\\temp\\teste.txt";
+        var path = "C:\\temp\\teste.csv";
 
         try (var br = new BufferedReader(new FileReader(path))) {
 

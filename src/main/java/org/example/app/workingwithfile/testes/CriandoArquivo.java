@@ -1,4 +1,4 @@
-package org.example.app.workingwithfile;
+package org.example.app.workingwithfile.testes;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -12,15 +12,15 @@ public class CriandoArquivo {
 
     public static void main(String[] args) {
 
-        String[] lines = new String[]{"Good morning", "Good afternoon", "Good night"};
-        String path = "C:\\temp\\teste.txt";
+        String[] lines = new String[] { "Good morning", "Good afternoon", "Good night" };
+        String path = "C:\\temp\\teste.csv";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
             for (String line : lines) {
                 bw.write(line);
                 bw.newLine();
                 LOG.debug(String.format("Linha %s escrita com sucesso", line));
-                System.out.println(String.format("Line %s written" , line));
+                System.out.println(String.format("Line %s written", line));
 
             }
         } catch (IOException e) {

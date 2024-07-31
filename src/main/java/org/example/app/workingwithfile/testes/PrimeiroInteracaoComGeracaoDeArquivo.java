@@ -1,22 +1,24 @@
-package org.example.app.workingwithfile;
+package org.example.app.workingwithfile.testes;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+import static java.lang.System.out;
+
 public class PrimeiroInteracaoComGeracaoDeArquivo {
 
     public static void main(String[] args) {
 
-        var file = new File("C:\\temp\\teste.txt");
+        var file = new File("C:\\temp\\teste.csv");
         Scanner keyboard = null;
         try {
             keyboard = new Scanner(file);
             while (keyboard.hasNextLine()) {
-                System.out.println(keyboard.nextLine());
+                out.println(keyboard.nextLine());
             }
         } catch (IOException e) {
-            System.out.println("Error" + e.getMessage());
+            out.println("Error" + e.getMessage());
         } finally {
             if (keyboard != null) {
                 keyboard.close();

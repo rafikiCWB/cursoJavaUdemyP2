@@ -12,7 +12,7 @@ public class FunctionSplit {
         System.out.println(Arrays.toString(vect));
         System.out.println("------------");
         String b = "boo:and:foo";
-        String[] result = b.split("[^oa]"); // Aqui estou usando regex para imprimir a String exceto a letra 'o' e leta 'a'
+        String[] result = b.split("[^oa]"); // Aqui estou usando regex para imprimir a String exceto a letra 'o' e letra 'a'
         System.out.println(Arrays.toString(result));
 
         StringBuilder strb = new StringBuilder();
