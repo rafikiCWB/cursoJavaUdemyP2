@@ -1,9 +1,13 @@
 package org.example.app.time;
 
+import java.text.NumberFormat;
 import java.time.*;
+import java.time.chrono.HijrahDate;
+import java.time.chrono.JapaneseDate;
 import java.time.chrono.ThaiBuddhistDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.stream.Stream;
 
 import static java.lang.System.out;
 
@@ -27,9 +31,15 @@ public class Main {
         String formattedDateTime = currentDateTime.format(formatter);
         out.println("Data e hora formatada: " + formattedDateTime);
 
+        var formattedDateTimeStream = Stream.of(currentDateTime)
+                .map(dt -> dt.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")))
+                .findFirst()
+                .orElse("");
+        out.println("Data e hora formatada: " + formattedDateTimeStream);
+
         out.println("------------");
 
-        var date = LocalDate.now();
+        LocalDate date = LocalDate.now();
         var datePlusDays = date.plusDays(5);
         out.println("Data atual + 5 dias: " + datePlusDays);
 
@@ -40,7 +50,7 @@ public class Main {
 
         // Calculando a diferença entre duas datas
         var startDate = LocalDate.of(2023, 1, 1);
-        var endDate = LocalDate.of(2024, 1, 1);
+        var endDate = LocalDate.of(2024, 2, 1);
         long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);
         out.println("Dias entre " + startDate + " e " + endDate + ": " + daysBetween);
 
@@ -48,6 +58,11 @@ public class Main {
         var zoneId = ZoneId.of("America/Sao_Paulo");
         var zonedDateTime = ZonedDateTime.now(zoneId);
         out.println("Data e hora em São Paulo: " + zonedDateTime);
+
+        //Asia/Kolkata
+        var zoneId2 = ZoneId.of("Asia/Kolkata");
+        var zonedDateTime2 = ZonedDateTime.now(zoneId2);
+        out.println("Data e hora na Asia/Kolkata: " + zonedDateTime2);
 
         // Obtendo a data atual no calendário Tailandês
         var thaiBuddhistDate = ThaiBuddhistDate.now();
@@ -74,8 +89,19 @@ public class Main {
         String formattedThaiDate1 = thaiBuddhistDate.format(formatter1);
         out.println("Data Tailandesa formatada: " + formattedThaiDate1);
 
+        // Obtendo a data atual no calendário Japonês
+        var calendarioJapones = JapaneseDate.now();
+        out.println("Data atual no calendário Japonês: " + calendarioJapones);
+
+        // Obtendo a data atual no calendário Hijri
+        var calendarioHijri = HijrahDate.now();
+        out.println("Data atual no calendário Hijri: " + calendarioHijri);
+
         out.println("Se o audio mono estiver ativado você desativa se estiver desativado você ativa");
 
+        double price = 1000000;
+        NumberFormat moeda = NumberFormat.getCurrencyInstance();
+        out.println(moeda.format(price));
 
     }
 }

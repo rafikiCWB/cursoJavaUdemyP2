@@ -54,10 +54,10 @@ public class StackPilha {
          * LIFO
          */
         Map<String, Long> listMap = new HashMap<>();
-        listMap.put("Rafael", 27l);
-        listMap.put("Paulo", 49l);
-        listMap.put("Paulo", 48l);
-        listMap.put("Iris", 49l);
+        listMap.put("Rafael", 27L);
+        listMap.put("Paulo", 49L);
+        listMap.put("Paulo", 48L);
+        listMap.put("Iris", 49L);
         System.out.print("Lista de Map: " + listMap);
     }
 }

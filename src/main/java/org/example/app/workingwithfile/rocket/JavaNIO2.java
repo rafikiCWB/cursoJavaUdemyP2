@@ -31,7 +31,7 @@ public class JavaNIO2 {
             // Leitura do arquivo
             List<String> leitura = Files.readAllLines(arquivoDestino);
             //Imprimir cada linha obtida no arquivo
-            for (String linha : contatos) {
+            for (String linha : leitura) {
                 System.out.println(linha);
             }
 

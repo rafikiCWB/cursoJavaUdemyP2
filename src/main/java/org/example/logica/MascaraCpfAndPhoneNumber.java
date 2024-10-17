@@ -23,7 +23,7 @@ public class MascaraCpfAndPhoneNumber {
                 addCpfPart(cpf, 3, 6) +
                 addCpfPart(cpf, 6, 9) +
                 cpf.substring(9);
-
+//000.000.000.00
     }
 
     public static String addCpfPart(String cpf, int startIndex, int endIndex) {

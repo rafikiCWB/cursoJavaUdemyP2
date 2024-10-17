@@ -1,7 +1,5 @@
 package org.example.exercism.cordoresistor;
 
-import junit.framework.TestCase;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Disabled;

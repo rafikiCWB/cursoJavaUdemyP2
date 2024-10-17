@@ -64,11 +64,11 @@ public class Cadastro {
     public static void main(String[] args) {
         //Nossos cadastros na forma de objetos
         List<Cadastro> cadastros = new ArrayList<>();
-        cadastros.add(new Cadastro("Joemia Giron Lyrio Monnerat", "F", 8321485886L, LocalDate.of(1984, 06, 30), 35.0, false));
-        cadastros.add(new Cadastro("Rafael Grando", "M", 4891234567L, LocalDate.of(1984, 06, 30), 35.0, true));
-        cadastros.add(new Cadastro("Joemia Giron Lyrio Monnerat", "F", 8321485886L, LocalDate.of(1984, 06, 30), 35.0, false));
-        cadastros.add(new Cadastro("Polliana Carvalhor", "M", 4891234567L, LocalDate.of(1984, 06, 30), 35.0, true));
-        cadastros.add(new Cadastro("Joemia Giron Lyrio Monnerat", "F", 8321485886L, LocalDate.of(1984, 06, 30), 35.0, false));
+        cadastros.add(new Cadastro("Joemia Giron Lyrio Monnerat", "F", 8321485886L, LocalDate.of(1984, 6, 30), 35.0, false));
+        cadastros.add(new Cadastro("Rafael Grando", "M", 4891234567L, LocalDate.of(1984, 6, 30), 35.0, true));
+        cadastros.add(new Cadastro("Joemia Giron Lyrio Monnerat", "F", 8321485886L, LocalDate.of(1984, 6, 30), 35.0, false));
+        cadastros.add(new Cadastro("Polliana Carvalhor", "M", 4891234567L, LocalDate.of(1984, 6, 30), 35.0, true));
+        cadastros.add(new Cadastro("Joemia Giron Lyrio Monnerat", "F", 8321485886L, LocalDate.of(1984, 6, 30), 35.0, false));
 
         escreverLayoutDelimitado(cadastros);
         escreverLayoutPosicional(cadastros);

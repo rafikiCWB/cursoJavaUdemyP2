@@ -9,7 +9,7 @@ public class JavaFileIo {
     public static void main(String[] args) {
 
         var diretorio = new File("C:\\temp\\rocket\\curso-java");
-        System.out.println("Diretório existe?" + diretorio.exists());
+        System.out.println(STR."Diretório existe?\{diretorio.exists()}");
         if (!diretorio.exists()) {
             diretorio.mkdirs();
             System.out.println("Diretório criado com sucesso!");

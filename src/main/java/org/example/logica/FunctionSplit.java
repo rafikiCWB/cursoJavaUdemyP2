@@ -17,6 +17,7 @@ public class FunctionSplit {
 
         StringBuilder strb = new StringBuilder();
         strb.append("Hello World!");
+        strb.append(" BRISA ");
         System.out.println(strb);
 
         strb.insert(5, " Java ");
@@ -26,5 +27,13 @@ public class FunctionSplit {
         int idade = 27;
         var resultado = String.format("%s tem %d anos", nome, idade);
         System.out.println(resultado);
+
+        String funTrim = "   Bla bla bla   ";
+        var removeEspacosIniciaisEFinaisDeUmaString = funTrim.trim();
+        System.out.println(removeEspacosIniciaisEFinaisDeUmaString);
+
+        String funSubstring = "dingue-dongue não delongue";
+        String mostrarAStringNaPosicaoQueVoceEscolher = funSubstring.substring(18);
+        System.out.println(mostrarAStringNaPosicaoQueVoceEscolher);
     }
 }

@@ -35,7 +35,7 @@ class ResistorColor {
                 return i;
             }
         }
-        throw new IllegalArgumentException("Invalid color: " + color);
+        throw new IllegalArgumentException(STR."Invalid color: \{color}");
     }
 
     public String[] colors() {
@@ -57,12 +57,12 @@ class ResistorColor {
     public static void main(String[] args) {
         var resistorColor = new ResistorColor();
 
-        out.println("Value of Red: " + resistorColor.colorCode("red")); // Should print: 2
+        out.println(STR."Value of Red: \{resistorColor.colorCode("red")}"); // Should print: 2
 
         resistorColor.colors();
 
         for (String colorCode : COLOR_CODES) {
-            out.println(colorCode + ": " + resistorColor.colorCode(colorCode));
+            out.println(STR."\{colorCode}: \{resistorColor.colorCode(colorCode)}");
 
         }
     }

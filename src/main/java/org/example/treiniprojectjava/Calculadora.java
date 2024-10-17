@@ -35,7 +35,7 @@ public class Calculadora {
                 out.println("OperaÇão inválida.");
                 return;
         }
-        out.println(number1 + " " + op + " " + number2 + " " + result);
+        out.println(number1 + " " + op + " " + number2 + " = " + result);
     }
 
 }

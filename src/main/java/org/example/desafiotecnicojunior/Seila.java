@@ -2,9 +2,7 @@ package org.example.desafiotecnicojunior;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 import static java.lang.System.out;
 
@@ -16,7 +14,7 @@ import static java.lang.System.out;
 public class Seila {
     public static void main(String[] args) {
         var teclado = new Scanner(System.in);
-        // Se eu digitar 2 a saída vai ser 'a' 'b'. Se eu digitar 5 a saída vair ser 'a' 'b' 'c' 'd' 'e'
+        // Se eu digitar 2 a saída vai ser 'a' 'b'. Se eu digitar 5 a saída vai ser 'a' 'b' 'c' 'd' 'e'
         char[] arrayAlfabeto = "abcdefghijklmnopqrstuvwxyz".toCharArray();
         for (char letra : arrayAlfabeto) {
             out.print(letra + " ");

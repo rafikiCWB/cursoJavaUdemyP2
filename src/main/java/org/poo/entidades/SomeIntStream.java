@@ -1,4 +1,4 @@
-package org.poo;
+package org.poo.entidades;
 
 import java.util.*;
 import java.util.stream.IntStream;
@@ -44,7 +44,7 @@ public class SomeIntStream {
         String nome = "rafael";
         String sobrenome = "Grando";
         int idade = 18;
-        out.printf("%s %s %d%n", nome, sobrenome, idade);
+        out.printf("%s %s %d%n", nome,sobrenome, (Object) idade);
     }
 
     public void conjunto() {

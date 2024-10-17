@@ -50,5 +50,6 @@ public class CaixaEletronico {
       System.out.println("Valor não disponivel");
     }
 
+    teclado.close();
   }
 }

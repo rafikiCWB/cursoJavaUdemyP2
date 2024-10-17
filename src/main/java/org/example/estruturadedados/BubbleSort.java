@@ -9,23 +9,22 @@ public class BubbleSort {
         int[] vetor = {1, 6, 2, 8, 7};
         // Aplica o algoritmo Bubber Sort
         bubbleSort(vetor);
+//        out.println(STR."Vetor ordenado: \{Arrays.toString(vetor)}");
 
         for (int i = 0; i < vetor.length; i++) {
-            out.println(vetor[i] + " ");
+            out.println("Vetor ordenado: " + vetor[i]);
         }
     }
 
     private static void bubbleSort(int[] vetor) {
-        int n = vetor.length;
 
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (vetor[j] < vetor[j + 1]) {
+        for (int i = 0; i < vetor.length; i++) {
+            for (int j = 0; j < vetor.length - 1 - i; j++) {
+                if (vetor[j] > vetor[j + 1]) {
                     // Troca vetor[j+1] e vetor[i]
                     int aux = vetor[j];
                     vetor[j] = vetor[j + 1];
                     vetor[j + 1] = aux;
-                    
                 }
             }
         }

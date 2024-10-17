@@ -1,4 +1,4 @@
-package org.poo;
+package org.poo.entidades;
 
 import static java.lang.System.out;
 

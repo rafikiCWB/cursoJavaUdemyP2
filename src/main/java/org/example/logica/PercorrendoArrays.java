@@ -27,5 +27,14 @@ public class PercorrendoArrays {
             out.print(p + " ");
         }
 
+        out.println("\n");
+        List<Integer> outraForaDeFazerAMesmaCoisa = Arrays.asList(2, 5, 7, 8, 10);
+        int result;
+        for (Integer posicaoNoArray : outraForaDeFazerAMesmaCoisa) {
+            result = posicaoNoArray * posicaoNoArray;
+            out.print(result + " ");
+            out.println("Tem posição: " + outraForaDeFazerAMesmaCoisa.indexOf(posicaoNoArray));
+        }
+        out.println("Fim");
     }
 }
