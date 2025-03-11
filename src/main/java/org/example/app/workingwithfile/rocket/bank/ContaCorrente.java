@@ -87,6 +87,7 @@ public class ContaCorrente {
 
   public static void main(String[] args) {
     var cc = new ContaCorrente();
+    System.out.println(cc);
     cc.consultarOsaldoAtual();
 
     cc.transferir(new ContaCorrente(1, 2, "Fulano", LocalDate.of(1990, 1, 1)), 1000.0);

@@ -10,6 +10,7 @@ public class App {
 
         System.out.println(gato.getTipo());
         gato.fazerSom();
+
     }
 }
 

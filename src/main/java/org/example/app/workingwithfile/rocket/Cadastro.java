@@ -51,7 +51,7 @@ public class Cadastro {
         StringBuilder conteudo = new StringBuilder();
         for (Cadastro cadastro : cadastros) {
             conteudo.append(cadastro.getNome() + ";");
-            conteudo.append(cadastro.getSexo() + ";");
+            conteudo.append(STR."\{cadastro.getSexo()};");
             conteudo.append(cadastro.getTelefone() + ";");
             conteudo.append(cadastro.getDataNascimento() + ";");
             conteudo.append(cadastro.getValorSugerido() + ";");

@@ -1,5 +1,7 @@
 package org.poo.entidades;
 
+import org.example.java.streams.ApiStream;
+
 import java.util.*;
 import java.util.stream.IntStream;
 
@@ -25,9 +27,7 @@ public class SomeIntStream {
     private static int[] vetorNumbers;
 
     public static void someStream() {
-        var stream = IntStream.range(1, 10);
-        stream.filter(n -> n % 2 == 0)
-                .forEach(out::println);
+        ApiStream.someStream();
     }
 
     public static void listaLigada() {
